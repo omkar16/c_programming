@@ -19,6 +19,17 @@ void main() {
     scanf("%d",&itech);
     total = (physics + chemistry + math + biology + english + itech);
     percentage = total / 6;
+
+    if (physics > chemistry && physics > math && physics > biology && physics > english && physics > itech) {
+        printf("Greatest mark is physics\n");
+    } else if (physics > chemistry && physics > math && physics > biology && physics > english && physics > itech) {
+        printf("Greatest mark is physics\n");
+    }
     printf("Your total marks is %d \n",total);
-    printf("Percentage of %s is : %d",name, percentage);
+    printf("Percentage of %s is : %d\n",name, percentage);
+    printf("|****************************************************************************|\n");
+    printf("|Physics | Chemistry | Math | Biology | English | ITech | Total | Percentage |\n");
+    printf("|****************************************************************************|\n");
+    printf("|%d      |%d         |%d    |%d       |%d       |%d     |%d     |%d          |\n", physics, chemistry, math, biology, english, itech, total, percentage);
+    printf("|****************************************************************************|\n");
 }
